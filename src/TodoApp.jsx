@@ -1,12 +1,14 @@
 import React from "react";
-import './CSS/TodoApp.css';
+import './TodoApp.css'
 
 import Header from './Components/Header'
+import Footer from "./Components/Footer";
 
 function TodoApp() {
     return (
         <div className='container'>
             <Header />
+            <Footer />
         </div>
     );
 }
