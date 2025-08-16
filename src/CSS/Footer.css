@@ -1,7 +1,9 @@
 .footer-container {
-
+    text-align: center;
+    margin-top: 75vh;
 }
 
-.footer-text {
-    font-family: ;
+.footer-text{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
 }
