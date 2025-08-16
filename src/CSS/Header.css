@@ -1,0 +1,13 @@
+.header-container {
+    text-align: center;
+}
+
+.header-title {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 40px;
+}
+
+.header-subtitle {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
