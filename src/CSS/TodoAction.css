@@ -1,19 +1,57 @@
 .todo-actions-container {
-
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
+.todo-actions-container button {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Icon */
+.icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* Save button */
 .save-btn {
-
+    color: #16a34a;
 }
 
+.save-btn:hover {
+    background-color: #dcfce7;
+}
+
+/* Cancel button */
 .cancel-btn {
-
+    color: #d97706;
 }
 
+.cancel-btn:hover {
+    background-color: #fef3c7;
+}
+
+/* Edit button */
 .edit-btn {
-
+    color: #2563eb;
 }
 
-.delete-btn {
+.edit-btn:hover {
+    background-color: #eff6ff;
+}
 
+/* Delete button */
+.delete-btn {
+    color: #dc2626;
+}
+
+.delete-btn:hover {
+    background-color: #fee2e2;
 }
