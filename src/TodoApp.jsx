@@ -3,6 +3,7 @@ import './TodoApp.css'
 
 import Header from './Components/Header';
 import AddTask from "./Components/AddTask";
+import TodoList from "./Components/TodoList";
 import Footer from "./Components/Footer";
 
 import {useTodo} from './Hooks/useTodo.js';
@@ -25,6 +26,17 @@ function TodoApp() {
         <div className='container'>
             <Header />
             <AddTask onAddTodo={addTodo} />
+            <TodoList
+                todos={todos}
+                onToggle={toggleTodo}
+                onDelete={deleteTodo}
+                editingId={editingId}
+                editingText={editingText}
+                setEditingText={setEditingText}
+                onStartEdit={startEditing}
+                onSaveEdit={saveEdit}
+                onCancelEdit={cancelEdit}
+            />
             <Footer />
         </div>
     );
