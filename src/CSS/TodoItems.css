@@ -1,11 +1,89 @@
 .todo-tasks-container {
-
+    list-style: none;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    transition: box-shadow 0.2s ease-in-out;
 }
 
+.todo-tasks-container:hover {
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+}
+
+/* Check button */
 .check-button {
-
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
 }
 
-.editing-section {
+.todo-toggle-button {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid #d1d5db;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
 
+.todo-toggle-button.incompleted:hover {
+    border-color: #60a5fa;
+}
+
+.todo-toggle-button.completed {
+    background-color: #22c55e;
+    border-color: #22c55e;
+    color: white;
+}
+
+.check-icon {
+    width: 14px;
+    height: 14px;
+}
+
+/* Editing section */
+.editing-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.todo-input {
+    flex: 1;
+    padding: 6px 10px;
+    font-size: 14px;
+    border: 2px solid #93c5fd;
+    border-radius: 8px;
+    outline: none;
+}
+
+.todo-input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37,99,235,0.2);
+}
+
+.todo-text {
+    font-size: 15px;
+    color: #111827;
+}
+
+.todo-text.completed {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+
+/* Date */
+.todo-date {
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: 2px;
 }
