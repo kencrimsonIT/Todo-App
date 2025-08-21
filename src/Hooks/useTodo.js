@@ -11,7 +11,7 @@ export function useTodo() {
                 id: 1,
                 text: 'Go to the gym for 2 hours',
                 completed: true,
-                createAt: new Date().toISOString()
+                createdAt: new Date().toISOString()
             }
         ];
         setTodos(tasks);
